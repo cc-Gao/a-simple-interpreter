@@ -1,0 +1,11 @@
+@*
+	for语句的简单测试
+*@
+int a,i,sum;
+a=readi();
+for i=0;i<a;i=i+1{
+	sum=sum+i;
+}
+print("sum={sum}");
+
+@@ input: 5

@@ -1,0 +1,7 @@
+@*
+	字符串数组的输出
+*@
+string sarr[2];
+sarr[0]="hello";
+sarr[1]="world";
+print("{sarr[0]} {sarr[1]}");

@@ -1,0 +1,11 @@
+@*
+	数组切片
+*@
+
+int arr1[5] = 3;
+int arr2[8] = 5;
+
+arr1[2:4]=arr2[4:6];
+
+print("arr1 = {arr1}\n");
+print("arr2 = {arr2}");

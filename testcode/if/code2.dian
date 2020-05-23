@@ -1,0 +1,40 @@
+@*
+	if-elif-else语句的测试
+*@
+int a;
+a=readi();
+if a==1{
+	print("Mo.\n");
+}
+elif a==2{
+	print("Tu.\n");
+}
+elif a==3{
+	print("We.\n");
+}
+elif a==4{
+	print("Th.\n");
+}
+elif a==5{
+	print("Fr.\n");
+}
+elif a==6{
+	print("Sa.\n");
+}
+elif a==7{
+	print("Su.\n");
+}
+else{
+	print("Unknown\n");
+}
+if a==0{
+	print("Is 0\n");
+}
+else{
+	print("Not 0\n");
+}
+if a==1{
+	print("Is 1\n");
+}
+
+@@ input:1

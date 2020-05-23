@@ -1,0 +1,18 @@
+@*
+	func功能的测试1
+*@
+
+int a,b,mx;
+a,b=readi(),readi();
+func max(int a, int b) int{
+	if a>b{
+		return a;
+	}
+	else{
+		return b;
+	}
+}
+mx=max(a,b);
+print("max={mx}");
+
+@@ input :123 	456

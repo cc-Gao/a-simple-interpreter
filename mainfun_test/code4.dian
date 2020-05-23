@@ -1,0 +1,8 @@
+@*
+	字符串的切片
+*@
+
+string s1 = "Dian2020";
+string s2 = s1[0:3];
+
+print("s1 = {s1}	s2 = {s2}");

@@ -1,0 +1,16 @@
+@*
+	多参数多返回值测试
+*@
+int a,b;
+a,b=readi(),readi();
+func maxmin (int a,int b) int,int
+{
+	if a>b{ return a,b;
+	} else{
+		return b,a;
+	}
+}
+a,b=maxmin(a,b);
+print("max={a}, min={b}");
+
+@@ input:123	456

@@ -1,0 +1,9 @@
+@*
+	assign语句
+*@
+int a;
+a=readi();
+assign as=a*2;
+print("a={as/2}");
+a=readf();
+print("a={a}, as={as}");

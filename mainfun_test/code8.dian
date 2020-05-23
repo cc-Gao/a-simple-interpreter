@@ -1,0 +1,10 @@
+int a =3;
+func fun1()
+{
+	int a;
+	a=5;
+	print("in func1:a={a}");
+}
+
+fun1();
+print("in global:a={a}");

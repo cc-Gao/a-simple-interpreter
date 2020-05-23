@@ -1,0 +1,10 @@
+@*
+	assign语句测试2
+*@
+string s1,s2;
+s1,s2=reads(),reads();
+int i;
+assign j=4-i;
+for i=0;i<5;i=i+1{
+    print("{s1[i]} {s2[j]}	");
+}

@@ -1,0 +1,27 @@
+@*
+	for语句测试2（缺省for的测试）
+*@
+int a,i,sum;
+a=readi();
+for ;i<a;i=i+1{
+	sum=sum+i;
+}
+print("sum={sum}\n");
+sum=0;
+for i=0;i<a;{
+	sum=sum+i;
+	i=i+1;
+}
+print("sum={sum}\n");
+sum=0;
+i=0;
+for {
+	sum=sum+i;
+	i=i+1;
+	if i>=a{
+		break;
+	}
+}
+print("sum={sum}\n");
+
+@@ input： 5

@@ -1,0 +1,13 @@
+@*
+	if 语句判断条件为变量
+*@
+int a,b;
+a,b=readi(),readi();
+if a<b  {
+print("a<b");} 
+elif a==b{
+print("a==b");} 
+else {
+print("a>b");}
+
+@@ input : 123	456

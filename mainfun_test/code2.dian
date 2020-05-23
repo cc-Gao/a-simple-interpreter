@@ -1,0 +1,15 @@
+@*
+	for 循环的嵌套
+*@
+int i;
+int j;
+int sum;
+for i=0;i<5;i+=1{
+	for j=0;j<10;j+=1{
+	sum +=1;
+	}
+}
+
+print("sum ={sum}");
+
+@@ no input

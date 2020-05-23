@@ -1,0 +1,17 @@
+@*
+	函数递归调用
+*@
+func fibb(int n) int{ 
+	if n<=2{
+		return 1;
+	} 
+	else{
+		return fibb(n-1)+fibb(n-2)+fibb(n-3);
+	}
+}
+
+int n;
+n=readi();
+print("fibb({n})={fibb(n+1)}");
+
+@@ input: 5

@@ -1,0 +1,36 @@
+@*
+	函数中局部变量的测试
+*@
+
+int a[32];
+func quicksort(int left, int right){
+    int i,j,flag;
+    if left>right {return;}
+    for (i,j=left,right);(i<j); {
+        for ;(i<j&&a[j]>=a[left]);{
+            j=j-1;
+        }
+        for ;(i<j&&a[i]<=a[left]);{
+            i=i+1;
+        }
+        if i==j{
+            a[i],a[left]=a[left],a[i];
+        }
+        else{
+            a[i],a[j]=a[j],a[i];
+        }
+    }
+    quicksort(left,i-1);
+    quicksort(j+1,right);
+}
+int n;
+n=readi();
+for k=0;k<n;k=k+1{
+    a[k]=readf();
+}
+quicksort(0,n-1);
+for k=0;k<n;k=k+4{
+    print("{a[k]} {a[k+1]} {a[k+2]} {a[k+3]} ");
+}
+
+@@ input: number + number 个数

@@ -1,0 +1,18 @@
+@*
+	for-else  break的测试
+*@
+int n,i,sum;
+n=readi();
+for {
+	sum=sum+i;
+	i=i+1;
+	if i>=n{
+		break;
+	}
+}
+else{
+	print("break\n");
+}
+print("sum={sum}\n");
+
+@@ input :5
