@@ -8,13 +8,13 @@
 #include "parser.h"
 #include "eval.h"
 
-/*******************************************************************************\
-*									parser部分									*
-*	该部分基本为parser结构的回调函数，用于构建AST语法树。每个节点为一个ASTnode类型的结构	*
-*				对于不同类型的节点，ASTnode中的property联合指针会有不同				*
-*			不同的结点对应着不同的回调（eval函数），用来后续的遍历执行整个语法树			*
-*																				*
-\*******************************************************************************/
+/******************************************************************************************\
+*                                  parser部分                                              *
+*   该部分基本为parser结构的回调函数，用于构建AST语法树。每个节点为一个ASTnode类型的结构   *
+*              对于不同类型的节点，ASTnode中的property联合指针会有不同                     *
+*           不同的结点对应着不同的回调（eval函数），用来后续的遍历执行整个语法树           *
+*                                                                                          *
+\******************************************************************************************/
 
 //eat函数：清除当前的token
 int parser_callback_eat(void* arg, dian_en_token_id type)
@@ -80,9 +80,9 @@ ASTnode* create_expression_list(ASTnode* expression_list, ASTnode* expression)
 }
 
 /****************************************
-*										*
-*			部分基础节点分析				*
-*										*
+*                                       *
+*          部分基础节点分析             *
+*                                       *
 ****************************************/
 
 ASTnode* create_unaryop(dian_en_token_id op, ASTnode* child)
@@ -148,9 +148,9 @@ ASTnode* create_funcall(char* id, ASTnode* expression_list)
 
 
 /****************************************
-*										*
-*			expression分析				*
-*										*
+*                                       *
+*          expression分析               *
+*                                       *
 ****************************************/
 
 
@@ -513,9 +513,9 @@ ASTnode* parser_callback_term6(void* arg)
 
 
 /****************************************
-*										*
-*			statement_list分析			*
-*										*
+*                                       *
+*           statement_list分析          *
+*                                       *
 ****************************************/
 
 ASTnode* create_statement_list(ASTnode* statement)
@@ -557,9 +557,9 @@ ASTnode* parser_callback_statement_list(void* arg)
 
 
 /****************************************
-*										*
-*			statement分析				*
-*										*
+*                                       *
+*           statement分析               *
+*                                       *
 ****************************************/
 
 
@@ -639,9 +639,9 @@ ASTnode* parser_callback_statement(void* arg)
 
 
 /****************************************
-*										*
-*		break_statement分析				*
-*										*
+*                                       *
+*        break_statement分析            *
+*                                       *
 ****************************************/
 
 ASTnode* parser_callback_break_statement(void* arg)
@@ -660,9 +660,9 @@ ASTnode* parser_callback_break_statement(void* arg)
 }
 
 /****************************************
-*										*
-*		return_statement分析				*
-*										*
+*                                       *
+*       return_statement分析            *
+*                                       *
 ****************************************/
 
 ASTnode* parser_callback_return_statement(void* arg)
@@ -687,9 +687,9 @@ ASTnode* parser_callback_return_statement(void* arg)
 
 
 /****************************************
-*										*
-*		assign_statement分析				*
-*										*
+*                                       *
+*       assign_statement分析            *
+*                                       *
 ****************************************/
 
 ASTnode* parser_callback_assign_statement(void* arg) 
@@ -719,9 +719,9 @@ ASTnode* parser_callback_assign_statement(void* arg)
 
 
 /****************************************
-*										*
-*		empty_statement分析				*
-*										*
+*                                       *
+*        empty_statement分析            *
+*                                       *
 ****************************************/
 
 ASTnode* parser_callback_empty_statement(void* arg)
@@ -742,9 +742,9 @@ ASTnode* parser_callback_empty_statement(void* arg)
 }
 
 /****************************************
-*										*
-*		simple_statement分析				*
-*										*
+*                                       *
+*       simple_statement分析            *
+*                                       *
 ****************************************/
 
 ASTnode* parser_callback_simple_statement(void* arg)
@@ -798,9 +798,9 @@ ASTnode* parser_callback_simple_statement(void* arg)
 }
 
 /****************************************
-*										*
-*		declaration_statement分析		*
-*										*
+*                                       *
+*       declaration_statement分析       *
+*                                       *
 ****************************************/
 
 //变量定义语句
@@ -1156,9 +1156,9 @@ ASTnode_func_point* parser_function_pointer(dian_st_parser* parser)
 }
 
 /****************************************
-*										*
-*		compound_statement分析			*
-*										*
+*                                       *
+*       compound_statement分析          *
+*                                       *
 ****************************************/
 
 ASTnode* parser_callback_compound_statement(void* arg)
@@ -1176,9 +1176,9 @@ ASTnode* parser_callback_compound_statement(void* arg)
 
 
 /****************************************
-*										*
-*			if_statement分析				*
-*										*
+*                                       *
+*           if_statement分析            *
+*                                       *
 ****************************************/
 
 /*if_else节点结构*/
@@ -1244,9 +1244,9 @@ ASTnode* parser_callback_if_statement(void* arg)
 }
 
 /****************************************
-*										*
-*			for_statement分析			*
-*										*
+*                                       *
+*           for_statement分析           *
+*                                       *
 ****************************************/
 
 /*for节点结构*/
