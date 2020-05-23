@@ -9,18 +9,6 @@
 #include "env.h"
 
 
-/*
-	5.12
-	暂未完成：
-	assignop的回调函数
-
-	明日任务：
-	完成全部的回调函数，实现if，for，def和函数调用功能。（return语句和break语句的实现方法的思考）
-	注意：未实现function_call节点，
-	有空可以设计输入输出函数
-*/
-
-
 
 dian_st_lexer g_lexer;
 dian_st_parser g_parser;
@@ -95,13 +83,9 @@ void dian_init_env_stack(env_table_stack* env_stack_point)
 
 int main(int argc, char* argv[])
 {
-	//static char code[] = "int a =10;print(\"a = {a+1}\");";
-	//static char code[] = "func test(int a,int b)int{return a+b;} int a,b=1,2; int c = test(3,4); print(\"a = {a}\");";
-	//static char code[] = "int arr[3] = 2;a[1] =5;print(\"arr: {arr}\");";
-	//static char code[] = "func test(int a,int b){int c =a+b ;} test(1,2);int d = c;int f =1 ;";
-	//static char code[] = "string a = \"qerwwrqrqew\";string b = a[3:5];";
-	//static char code[] = "string s1,s2;s1,s2=reads(),reads();int i; assign j = 4-i;\
-						for i=0;i<5;i=i+1{print(\"srdf\");}";
+	
+
+	
 
 	if (argc < 2)
 	{
@@ -121,7 +105,6 @@ int main(int argc, char* argv[])
 	fread(code, 1000, 1, fp);
 
 
-	//static char code[] = "int a; a =readf();print(\"a^2 ={a**2}\");";
 
 	dian_init_lexer(code,&g_lexer);
 	dian_init_parser(&g_parser,&g_lexer);
